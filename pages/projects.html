@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html lang = "en">
+	<head>
+		<meta charset = "utf-8"/>
+		<link rel="stylesheet" href="../style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Abyssinica+SIL&family=Caveat:wght@400;500;600;700&family=Fuzzy+Bubbles:wght@400;700&family=Noto+Sans+Mono:wght@300;400;500;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+		<title> Projects </title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul class = "nav-links">
+					<li><a class="nav-link" href="../index.html"><button class = "headbutt">HOME</button></a></li>
+					<li><a class="nav-link" href="edu.html"><button class = "headbutt">EDUCATION</button></a></li>
+					<li><a class="nav-link" href="projects.html"><button class = "headbutt"><b>PROJECTS</b></button></a></li>
+					<li><a class="nav-link" href="skills.html"><button class = "headbutt">SKILLS</button></a></li>
+				</ul>
+			</nav>
+		</header>
+		<hr height = "10px" color = "rgb(24,32,78)"/>
+		<main>
+		<h1 class = "subpage_heading">PROJECTS </h1>
+		<hr height = "10px" color = "black" />
+		<div class="grid-container">
+			<div class="grid-item">
+				<div class = "project-temp"><b><u>Handwritten Digits Inference Engine</u> :</b>
+					<div>
+					<ul class = "project-info">
+						<li>An ASIC is designed and implemented to perform classification of handwritten digits (0 to 9).</li>
+						<li>The neural network used is Extreme Learning Machine which is single layered, feedforward and fully connected network.</li>
+						<li>Software trainig of model is done on MATLAB and weights are calculated.</li>
+						<li>The RTL description of trained model is written using verilog and ASIC flow is performed using gpdk180 library.</li>
+						<li>An LFSR is designed and used for generation of random weights for first layer.</li>
+						<li>The operating frequency of design is 100MHz.</li>
+						<li><b>Skills</b> : Xilinx Vivado, Verilog, Cadence Design Tools, MATLAB</li>
+						<li><a href="https://github.com/pruthvisa78/handwritten-digits-inference-engine"><button class = "project_link">GitHub Link</button></a></li>
+					</ul>
+				</div>
+				</div>
+				<div><img  class = "picture_projects" src = "../images/ELM_B.png" alt = "Hardware Block Diagram" height = "260px"/></div>
+			</div>
+			
+			<div class="grid-item">
+				<div class = "project-temp"><b><u>Multi Cycle Processor</u> :</b>
+					<div>
+					<ul class = "project-info">
+						<li>A 16-bit RISC style procsser is implemented on Basys3 FPGA board.</li>
+						<li>The designed processor is of multi cycle having four stages namely fetch, decode, execute and write-back.</li>
+						<li>It supports arithmetic, logical, immediate, load, store and branch instructions.</li>
+						<li>Tested the post implemented design by executing assembly language code for sorting of an array using bubble sort algorithm.</li>
+						<li>The operating frequency of processor is 50MHz</li>
+						<li><b>Skills</b> : Xilinx Vivado, Verilog</li>
+						<li ><a href="https://github.com/pruthvisa78/multi-cycle-processor"><button class = "project_link">GitHub Link</button></a></li>
+					</ul>
+				</div>
+				</div>
+				<div><img class = "picture_projects" src = "../images/multicycle.png" alt = "Multicycle processor" height = "270px"/></div>
+			</div>
+			
+			<div class="grid-item">
+				<div class = "project-temp"><b><u>Image Processing Filters</u> :</b>
+					<div>
+					<ul class = "project-info">
+						<li>Hardware implementation of spatial image filters is perfomed.</li>
+						<li>Gaussian and Median are the types of implemented filters.</li>
+						<li>Gaussian filter is used for smoothing of input image with hard edges.</li>
+						<li>Median filter is usef for denoising of input image with salt and pepper noise.</li>
+						<li>The filter operation is performed on 32x32 gray scale image stored in BRAM.</li>
+						<li>The design is implemented in Basys3 FPGA board and operated at 100MHz.</li>
+						<li><b>Skills</b> : Xilinx Vivado, VHDL, MATLAB</li>
+						<li ><a href="https://github.com/pruthvisa78/image-processing-filters"><button class = "project_link">GitHub Link</button></a></li>
+					</ul>
+				</div>
+				</div>
+				<div><img class = "picture_projects" src = "../images/Filters.png" alt = "Filter Types" height = "230px"/></div>
+			</div>
+			
+			<div class="grid-item">
+			    <div class = "project-temp"><b><u>SPICE Parser and Simulator</u> :</b>
+					<div>
+					<ul class = "project-info">
+						<li>A program is written in MATLAB for parsing and simulation of given netlist.</li>
+						<li>It can parse a netlist containing R, C, G, V elements.</li>
+						<li>It can perform dc operating point analysis and transient simulation.</li>
+						<li>Tested program for given netlists and compared with LTspice simulation results.</li>
+						<li><b>Skills</b> : SPICE, MATLAB, LTspice</li>
+						<li ><a href="https://github.com/pruthvisa78/SPICE-parser-simulator"><button class = "project_link">GitHub Link</button></a></li>
+					</ul>
+				</div>
+				</div>
+				<div><img class = "picture_projects" src = "../images/spice.png" alt = "SPICE" height = "230px"/></div>
+			</div>
+			
+			<div class="grid-item">
+				<div class = "project-temp"><b><u>Farbrication and Simulation of CMOS Invereter</u> :</b>
+					<div>
+					<ul class = "project-info">
+						<li>A CMOS inverter for given is specifications is designed and fabricated using sprocess.</li>
+						<li>The fabricated inverter is simulated using sdevice to obatin transisent response.</li>
+						<li><b>Skills</b> : TCAD, OriginPro</li>
+						<li ><a href="###"><button class = "project_link">Report Link</button></a></li>
+					</ul>
+				</div>
+				</div>
+				<div><img class = "picture_projects" src = "../images/finaldevice.png" alt = "CMOS Inverter" height = "200px"/><img class = "picture_projects" src = "../images/invreter.png" alt = "CMOS Inverter" height = "200px"/></div>
+			</div>
+			
+			<div class="grid-item">
+				<div class = "project-temp"><b><u>Silicon Neuron and Synapse</u> :</b>
+					<div>
+					<ul class = "project-info">
+						<li>Neuron Model implemented is Octopus Neuron Model.</li>
+						<li>Synapse Model implemented is Current Mirror Integrator Synapse.</li>
+						<li>The operation regime of tranistors is sub-threshold region.</li>
+						<li>The library used for implementation is gpdk180.</li>
+						<li><b>Skills</b> : Cadence Virtuoso</li>
+						<li ><a href="###"><button class = "project_link">Report Link</button></a></li>
+					</ul>
+				</div>
+				</div>
+				<div><img class = "picture_projects" src = "../images/siliconsyn.png" alt = "Synapse and Neuron" height = "200px"/></div>
+			</div>
+			
+			<div class="grid-item">
+				<div class = "project-temp"><b><u>Sum of Absolute Difference Architecture</u> :</b>
+					<div>
+					<ul class = "project-info">
+						<li>Implemented a Sum of Absolute Difference (SAD) block for Motion Estimation.</li>
+						<li>The designed SAD is compatible with High Efficiency Video Coding (HEVC) standard.</li>
+						<li>The SAD block can perform the computations for variable block size that HEVC algorithm contains.</li>
+						<li><b>Skills</b> : Xilinx ISE, MATLAB</li>
+						<li><a href="###"><button class = "project_link">Report Link</button></a></li>
+					</ul>
+				</div>
+				</div>
+				<div><img class = "picture_projects" src = "../images/Motionestimation.png" alt = "Block Searching" height = "200px"/></div>
+			</div>
+			
+			<div class="grid-item">
+				<div class = "project-temp"><b><u>Ballon Shooter Game</u> :</b>
+					<div>
+						<ul class = "project-info">
+							<li>A program for simple ballon shooting game is written in python using pygame package.</li>
+							<li>The game has movement and shooting controls with a option of pause and restart option.</li>
+							<li><b>Skills</b> : Python</li>
+							<li ><a href="https://github.com/pruthvisa78/ballon-shooter"><button class = "project_link">GitHub Link</button></a></li>
+						</ul>
+					</div>
+				</div>
+				<div><img class = "picture_projects" src = "../images/ballon_shooter.png" alt = "ballon shooter game interface" height = "200px"/></div>
+			</div>
+			
+			<div class="grid-item">
+				<div class = "project-temp"><b><u>Personal Website</u> :</b>
+					<div>
+					<ul class = "project-info">
+						<li>A personal webiste is written using HTML and CSS. </li>
+						<li><b>Skills</b> : HTML, CSS</li>
+						<li ><a href="https://github.com/pruthvisa78/personal-website"><button class = "project_link">GitHub Link</button></a></li>
+					</ul>
+				</div>
+				</div>
+				<div><img class = "picture_projects" src = "../images/website.png" alt = "website home page" height = "225px"/></div>
+			</div>
+			
+		</div>	
+		
+		</main>
+		
+		<footer>
+		<hr/ color = "black">
+			<ul class = "socialmedia">
+					<li><a class="cont" href="https://github.com/pruthvisa78">GitHub</a></li>
+					<li><a class="cont" href="https://www.linkedin.com/in/pruthvisa78/">LinkedIn</a></li>
+					<li><a class="cont" href="https://www.twitter.com/pruthvisa78">Twitter</a></li>
+					<li><a class="cont" href="https://www.instagram.com/pruthvisa78/">Instagram</a></li>
+			</ul>
+		</footer>
+	</body>
+</html>
+
